@@ -13,13 +13,16 @@ pipeline{
         stage("Test"){
             steps{
                 bat 'mvn clean test'
-            }
+            }   
           
         }
-        stage("Artifacts"){
+        post{
+            always{
             steps{
                 archiveArtifacts artifacts: '/results'
             }
+            }
         }
+        
     }
 }
