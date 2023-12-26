@@ -18,9 +18,9 @@ pipeline{
         }
         post{
             always{
-            steps{
+                
                 archiveArtifacts artifacts: '/results'
-            }
+            
             }
         }
         
