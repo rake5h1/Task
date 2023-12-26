@@ -1,7 +1,7 @@
 pipeline{
 
     agent any
-    
+
     stages{
 
         stage("checkout"){
@@ -18,9 +18,8 @@ pipeline{
         }
         stage("Artifacts"){
             steps{
-                archiveArtifacts artifacts: /results
+                archiveArtifacts artifacts: '/results'
             }
         }
     }
-   
 }
