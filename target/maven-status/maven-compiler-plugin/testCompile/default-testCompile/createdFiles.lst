@@ -1,0 +1,8 @@
+com\task\automation\test\HomeScreen.class
+com\task\automation\test\chromeGrid.class
+com\task\automation\testtwo\testfirefox.class
+com\task\automation\test\firefoxGrid.class
+com\task\automation\test\TestNG.class
+com\task\automation\testtwo\testchrome.class
+com\task\automation\test\orderPlace.class
+com\task\automation\test\SignIn.class
