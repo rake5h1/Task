@@ -32,6 +32,7 @@
 				<version>3.0.0-M1</version>
 				<configuration>
 	                <suiteXmlFiles>
+						<!-- <suiteXmlFile>resources\testNG_xml\SanitySuite.xml</suiteXmlFile> -->
 						<suiteXmlFile>resources\testNG_xml\SanitySuite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
