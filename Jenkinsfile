@@ -16,13 +16,14 @@ pipeline{
             }   
           
         }
-        post{
+        
+        
+    }
+    post{
             always{
                 
                 archiveArtifacts artifacts: '/results'
             
             }
         }
-        
-    }
 }
