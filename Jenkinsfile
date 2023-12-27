@@ -23,7 +23,7 @@ pipeline{
     post{
             always{
                 
-                echo 'Build Completed Succesfully '
+                echo 'Build Completed'
             
             }
         }
