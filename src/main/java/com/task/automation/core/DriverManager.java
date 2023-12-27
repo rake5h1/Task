@@ -25,7 +25,7 @@ public class DriverManager {
 	public WebDriver getDriver() {
 
 		System.out.println("****************Driver*************"
-				+ configurationManager.properties.getProperty("firefox.driver.path"));
+				+ System.getProperty("user.dir")+configurationManager.properties.getProperty("firefox.driver.path"));
 		if (driver == null)
 			driver = createDriver();
 		return driver;
