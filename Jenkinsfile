@@ -27,7 +27,7 @@ pipeline{
             always{
                 
                 echo 'Build Completed'
-                archiveArtifatcs artifacts: '/results'
+                archiveArtifacts artifacts: '/results'
             
             }
         }
