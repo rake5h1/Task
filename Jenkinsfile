@@ -22,7 +22,7 @@ pipeline{
     post{
             always{
                 
-                archiveArtifacts artifacts: '/results'
+                echo 'Build Completed Succesfully '
             
             }
         }
