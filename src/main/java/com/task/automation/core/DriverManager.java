@@ -43,8 +43,7 @@ public class DriverManager {
 				// firefoxOptions.addPreference("permissions.default.microphone", 1);
 				// firefoxOptions.addPreference("permissions.default.camera", 1);
 				firefoxOptions.addPreference("media.navigator.permission.disabled", true);
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
-						+ configurationManager.properties.getProperty("firefox.driver.path"));
+				System.setProperty("webdriver.gecko.driver",  configurationManager.properties.getProperty("firefox.driver.path"));
 				driver = new FirefoxDriver(firefoxOptions);
 				break;
 			case CHROME:
