@@ -6,8 +6,6 @@ pipeline{
         maven 'Maven'
     }
 
-    
-
     stages{
 
         stage("Checkout"){
