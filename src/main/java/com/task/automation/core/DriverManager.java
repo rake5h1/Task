@@ -46,7 +46,7 @@ public class DriverManager {
 				firefoxOptions.addArguments("--no-sandbox");
 				firefoxOptions.addArguments("--disable-dev-shm-usage");
 				firefoxOptions.addArguments("--window-size=1580,1280");
-				firefoxOptions.setBinary("/snap/bin/firefox");
+				// firefoxOptions.setBinary("/snap/bin/firefox");
 				// firefoxOptions.addPreference("permissions.default.microphone", 1);
 				// firefoxOptions.addPreference("permissions.default.camera", 1);
 				// firefoxOptions.addPreference("media.navigator.permission.disabled", true);
