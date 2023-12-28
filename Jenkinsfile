@@ -15,7 +15,7 @@ pipeline{
         }
         stage("Setup"){
             steps{
-                sh 'chmod +x /var/lib/jenkins/workspace/Pipeline/resources/drivers/geckodriver'
+                sh 'chmod +x /var/lib/jenkins/workspace/Pipeline/resources/drivers/chromedriver'
 
             }
         }
