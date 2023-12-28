@@ -39,14 +39,19 @@ public class DriverManager {
 				FirefoxOptions firefoxOptions = new FirefoxOptions();
 				firefoxOptions.setAcceptInsecureCerts(true);
 				firefoxOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-				//firefoxOptions.addArguments("use-fake-ui-for-media-stream");
+				// firefoxOptions.addArguments("use-fake-ui-for-media-stream");
 				firefoxOptions.addArguments("--headless");
+				firefoxOptions.addArguments("--disable-gpu");
+				firefoxOptions.addArguments("--disable-extensions");
+				firefoxOptions.addArguments("--no-sandbox");
+				firefoxOptions.addArguments("--disable-dev-shm-usage");
+				firefoxOptions.addArguments("--window-size=1580,1280");
 				firefoxOptions.setBinary("/snap/bin/firefox");
 				// firefoxOptions.addPreference("permissions.default.microphone", 1);
 				// firefoxOptions.addPreference("permissions.default.camera", 1);
-				//firefoxOptions.addPreference("media.navigator.permission.disabled", true);
-				//System.out.println(System.getProperty("user.dir")
-						//+ configurationManager.properties.getProperty("firefox.driver.path"));
+				// firefoxOptions.addPreference("media.navigator.permission.disabled", true);
+				// System.out.println(System.getProperty("user.dir")
+				// + configurationManager.properties.getProperty("firefox.driver.path"));
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
 						+ configurationManager.properties.getProperty("firefox.driver.path"));
 				driver = new FirefoxDriver(firefoxOptions);
