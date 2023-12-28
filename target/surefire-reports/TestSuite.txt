@@ -1,16 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 71.666 s <<< FAILURE! - in TestSuite
-verifyCreateNewUserWithValid(com.task.automation.test.SignIn)  Time elapsed: 11.915 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //a[contains(text(),'Create New')]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 20.82 s <<< FAILURE! - in TestSuite
+beforeTest(com.task.automation.test.SignIn)  Time elapsed: 20.614 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'RAKESH-ACER', ip: '192.168.219.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:processID: 10864, moz:profile: C:\Users\Rakesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ecb8c18e-8841-41b2-9efa-4d95070bb641
-*** Element info: {Using=xpath, value=//a[contains(text(),'Create New')]}
-	at com.task.automation.test.SignIn.verifyCreateNewUserWithValid(SignIn.java:83)
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:46315/status] to be available after 20015 ms
+Caused by: java.util.concurrent.TimeoutException
 

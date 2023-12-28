@@ -25,7 +25,7 @@ public class DriverManager {
 	public WebDriver getDriver() {
 
 		System.out.println("****************Driver*************"
-				+ System.getProperty("user.dir")+configurationManager.properties.getProperty("firefox.driver.path"));
+				+ System.getProperty("user.dir") + configurationManager.properties.getProperty("firefox.driver.path"));
 		if (driver == null)
 			driver = createDriver();
 		return driver;
@@ -41,10 +41,12 @@ public class DriverManager {
 				firefoxOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				firefoxOptions.addArguments("use-fake-ui-for-media-stream");
 				firefoxOptions.addArguments("--headless");
-				firefoxOptions.setBinary("/opt/firefox/firefox");
+				// firefoxOptions.setBinary("/opt/firefox/firefox");
 				// firefoxOptions.addPreference("permissions.default.microphone", 1);
 				// firefoxOptions.addPreference("permissions.default.camera", 1);
 				firefoxOptions.addPreference("media.navigator.permission.disabled", true);
+				System.out.println(System.getProperty("user.dir")
+						+ configurationManager.properties.getProperty("firefox.driver.path"));
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
 						+ configurationManager.properties.getProperty("firefox.driver.path"));
 				driver = new FirefoxDriver(firefoxOptions);
