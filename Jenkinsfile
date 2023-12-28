@@ -15,7 +15,7 @@ pipeline{
         }
         stage("Setup"){
             steps{
-                sh 'chmod +x /var/lib/jenkins/workspace/Maven/resources/drivers/geckodriver'
+                sh 'chmod +x /home/ubuntu/Maven/resources/drivers/geckodriver'
 
             }
         }
