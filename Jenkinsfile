@@ -13,12 +13,12 @@ pipeline{
                 checkout scm
             }
         }
-        // stage("Setup"){
-        //     steps{
-        //         sh 'sudo chmod +x /home/ubuntu/Maven/resources/drivers/geckodriver'
+        stage("Setup"){
+            steps{
+                sh 'chmod +x /var/lib/jenkins/workspace/Pipeline/resources/drivers/geckodriver'
 
-        //     }
-        // }
+            }
+        }
 
         stage("Test"){
             steps{
