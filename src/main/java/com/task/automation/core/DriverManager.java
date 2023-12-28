@@ -41,7 +41,7 @@ public class DriverManager {
 				firefoxOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				firefoxOptions.addArguments("use-fake-ui-for-media-stream");
 				firefoxOptions.addArguments("--headless");
-				// firefoxOptions.setBinary("/opt/firefox/firefox");
+				firefoxOptions.setBinary("/snap/bin/firefox");
 				// firefoxOptions.addPreference("permissions.default.microphone", 1);
 				// firefoxOptions.addPreference("permissions.default.camera", 1);
 				firefoxOptions.addPreference("media.navigator.permission.disabled", true);
