@@ -32,7 +32,7 @@ pipeline{
     post{
             always{
                 
-                echo 'Build Completed'
+                echo 'Build Completed Successfully...'
                 archiveArtifacts artifacts: '/results'
             
             }
